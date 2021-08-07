@@ -1,0 +1,52 @@
+<div></div>
+
+<div class="center-content">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Login/Register</mat-card-title>
+      <mat-card-subtitle>Trops</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-tab-group>
+        <mat-tab label="Login">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" type="email" value="" [(ngModel)]="tr_log_email">
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Password" type="password" value="" [(ngModel)]="tr_log_pass">
+            <mat-icon matSuffix>vpn_key</mat-icon>
+          </mat-form-field>
+          <div class="example-button-row">
+            <button mat-button color="primary" class="button_style" (click)="login()"><p>Login</p></button>
+          </div>
+        </mat-tab>
+        <mat-tab label="Register">
+          <mat-form-field class="example-full-width">
+            <mat-label>Email</mat-label>
+            <input matInput placeholder="Email" type="email" value="" [(ngModel)]="tr_reg_email">
+            <mat-icon matSuffix>email</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Password</mat-label>
+            <input matInput placeholder="Password" type="password" value="" [(ngModel)]="tr_reg_pass">
+            <mat-icon matSuffix>vpn_key</mat-icon>
+          </mat-form-field>
+
+          <mat-form-field class="example-full-width">
+            <mat-label>Confirm Password</mat-label>
+            <input matInput placeholder="Password" type="password" value="" [(ngModel)]="tr_reg_conf_pass">
+            <mat-icon matSuffix>vpn_key</mat-icon>
+          </mat-form-field>
+          <div class="example-button-row">
+            <button mat-button color="primary" (click)="register()">Register </button>
+          </div>
+        </mat-tab>
+      </mat-tab-group>
+    </mat-card-content>
+  </mat-card>
+</div>
